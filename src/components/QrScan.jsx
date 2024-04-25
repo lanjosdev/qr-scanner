@@ -4,7 +4,7 @@ import { QrReader } from '@otterscan/react-qr-reader';
 import './style.css';
 
 export const QrScan = () => {
-  const [data, setData] = useState('No result');
+  const [data, setData] = useState('Aponte para o QRcode');
 
   const constraints = {
     // width: { min: 1440, ideal: 1920, max: 1920 },
