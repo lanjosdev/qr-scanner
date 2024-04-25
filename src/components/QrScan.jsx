@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { QrReader } from '@otterscan/react-qr-reader';
 
+import './style.css';
+
 export const QrScan = () => {
   const [data, setData] = useState('No result');
 
@@ -15,6 +17,7 @@ export const QrScan = () => {
     <div className='QrScan'>
 
       <QrReader
+        className='scan'
         onResult={(result, error) => {
           if(result) {
             setData(result?.text);
@@ -24,11 +27,13 @@ export const QrScan = () => {
             console.info(error);
           }
         }}
-        style={{ width: '100%' }}
+        // style={{ width: '100%' }}
         constraints={constraints}
       />
 
-      <p>{data}</p>
+      <p className='result'>
+        {data}
+      </p>
 
     </div>
   );

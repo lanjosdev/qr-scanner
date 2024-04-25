@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './routes'; //Config de rotas
 
 // Estilo Global:
-// import './styles/global.scss';
+import './styles/global.css';
 
 
 export default function App() {

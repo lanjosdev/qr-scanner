@@ -8,7 +8,7 @@ import { QrScan } from "../../components/QrScan";
 
 
 // Estilo:
-// import './home.scss';
+import './home.css';
 
 
 export default function Home() {
@@ -16,9 +16,9 @@ export default function Home() {
 
     return (
         <main className='Home'>
-            <h1>Teste QR Code Reader</h1>
 
             <QrScan />
+            
         </main>
     )
 }
