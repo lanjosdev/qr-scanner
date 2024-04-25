@@ -9,8 +9,8 @@ export const QrScan = () => {
   const constraints = {
     // width: { min: 1440, ideal: 1920, max: 1920 },
     // height: { min: 960, ideal: 1080, max: 1080 },
-    // aspectRatio: 16 / 9,
-    facingMode: "environment"
+    aspectRatio: 16 / 9,
+    facingMode: "user"
   };
 
   return (
